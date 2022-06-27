@@ -1,6 +1,7 @@
-from find URL import domain_name
+from tasks import find_URL
 
-assert domain_name("http://google.com") == "google"
-assert domain_name("http://google.co.jp") == "google"
-assert domain_name("www.xakep.ru") == "xakep"
-assert domain_name("https://youtube.com") == "youtube"
+
+assert find_URL.domain_name("http://google.com") == "google"
+assert find_URL.domain_name("http://google.co.jp") == "google"
+assert find_URL.domain_name("www.xakep.ru") == "xakep"
+assert find_URL.domain_name("https://youtube.com") == "youtube"
